@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+<div class="pb-2 mt-4 mb-2 border-bottom">
+    <h1>Geocachefriends</h1>
+
+    <p>
+        <ul>
+            <li>Ever got stuck in the field while geocaching?</li>
+            <li>Ever wanted to give a shoutout to geocachers near you?</li>
+        </ul>
+    </p>
+    <p>
+        Then geofriends is the app for you!
+    </p>
+    <p>
+        Create an account, download the app and login to start geocaching.
+        The app will find other geocachers in your neighborhood hunting for treasure.
+    </p>
+    <h2 class="text-primary">
+        {% if current_user.is_authenticated %} Currently logged in as {{ current_user.username }}
+        {% else %}<a href="{{ url_for('auth.login') }}">Login</a> to find geocachers in the vicinity{% endif %}
+    </h2>
+</div>
+
+<div>
+<p class="bg-primary map">
+    {{ googlemap("geofriends_map", 51.23234234, 4.234234234) }}    
+</p>
+</div>
+<hr/>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}
