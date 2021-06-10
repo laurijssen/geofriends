@@ -5,3 +5,4 @@ bin
 .vscode
 0
 __pycache__
+venv
