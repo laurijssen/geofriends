@@ -7,31 +7,7 @@ data = s.loads(token)
 ```
 
 
-***************************************************************************************************
-*                                                                                                 *     
-* Subject: Installing Kubernetes using "Kubeadm" on "Ubuntu"                                      *
-*                                                                                                 *
-* Author: Srinath Challa | Kubernetes SME | Udemy                                                 *
-*                                                                                                 *
-* Created On: Feb 2021                                                                            *
-*                                                                                                 *
-* Connect me on:                                                                                  *    
-* --------------                                                                                  *
-* https://www.udemy.com/user/srinathchalla/                                                       *
-* https://www.linkedin.com/in/srinathchalla/                                                      *
-* https://www.youtube.com/srinathchalla                                                           *
-*                                                                                                 *
-* Reference:                                                                                      *
-* ----------                                                                                      *
-* https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/          *
-* https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/   *
-* https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker              *
-*                                                                                                 *
-***************************************************************************************************
-
-
-***************************************************************************************************
-
+* Subject: Installing Kubernetes using "Kubeadm" on "Ubuntu"
 
 0. Provisioning Nodes and Firewalls:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
