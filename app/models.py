@@ -403,7 +403,8 @@ class User(db.Model, UserMixin):
             'posts_url': url_for('api.get_user_posts', id=self.id),
             'followed_posts_url': url_for('api.get_user_followed_posts',
                                         id=self.id),
-            'post_count': self.posts.count()
+            'post_count': self.posts.count(),
+            'gravatar_url': self.gravatar(size=100)
         }
         return json_user
 
